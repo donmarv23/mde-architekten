@@ -25,6 +25,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            position: relative;
         }
 
         img {
@@ -32,10 +33,29 @@
             width: 150px;
             height: auto;
         }
+
+        .impressum-link {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #777;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .impressum-link:hover {
+            color: #fff;
+        }
     </style>
 </head>
 
 <body>
-    <img src="logo.png" alt="Logo">
+
+    <img src="logo.png" alt="MDE Architekten">
+
+    <a class="impressum-link" href="impressum.html">Impressum</a>
+
 </body>
 </html>
